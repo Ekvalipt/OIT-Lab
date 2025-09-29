@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація</title>
+</head>
+<body>
+    <header>
+        <h1>Форма реєстрації</h1>
+        <nav>
+            <a href="./index.html">Головна</a> |
+            <a href="./pro_aple.html">Про Apple</a> |
+            <a href="./rehestracia.html">Реєстрація</a> |
+            <a href="./opitt.html">Опитувальник</a> |
+            <a href="https://jabko.ua/">Купити</a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="">
+            <label>Введіть ім'я:<br>
+                <input type="text" name="name" placeholder="Ваше ім'я" required>
+            </label><br>
+
+            <label>Введіть email:<br>
+                <input type="email" name="email" placeholder="example@gmail.com" required>
+            </label><br>
+
+            <label>Пароль (мін. 6 символів):<br>
+                <input type="password" name="password" minlength="6" required>
+            </label><br>
+
+            <label>Повторіть пароль:<br>
+                <input type="password" name="confirm_password" minlength="6" required>
+            </label><br>
+
+            <div>
+                <input type="submit" value="Зареєструватись">
+                <input type="reset" value="Очистити">
+            </div>
+        </form>
+    </main>
+</body>
+</html>

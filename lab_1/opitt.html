@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опитувальник</title>
+</head>
+<body>
+    <header>
+        <h1>Опитувальник</h1>
+        <nav>
+            <a href="./index.html">Головна</a> |
+            <a href="./pro_aple.html">Про Apple</a> |
+            <a href="./rehestracia.html">Реєстрація</a> |
+            <a href="./opitt.html">Опитувальник</a> |
+            <a href="https://jabko.ua/">Купити</a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <label>Ваш логін:<br>
+                <input type="text" name="login" placeholder="Логін" required>
+            </label><br>
+
+            <label>Email:<br>
+                <input type="email" name="email" placeholder="example@gmail.com" required>
+            </label><br>
+
+            <label>Ваш відгук:<br>
+                <textarea name="feedback" rows="4" cols="40" placeholder="Напишіть свій коментар..."></textarea>
+            </label><br>
+
+            <label>Виберіть улюблений продукт:<br>
+                <select name="device">
+                    <option value="iphone" selected>iPhone</option>
+                    <option value="ipad">iPad</option>
+                    <option value="mac">Mac</option>
+                    <option value="watch">Apple Watch</option>
+                </select>
+            </label><br>
+
+            <p><b>Ви користуєтесь Apple?</b></p>
+            <label><input type="radio" name="use_apple" value="yes"> Так</label><br>
+            <label><input type="radio" name="use_apple" value="no"> Ні</label><br>
+
+            <p><b>Яка техніка вас цікавить?</b></p>
+            <label><input type="checkbox" name="interest" value="iphone"> iPhone</label><br>
+            <label><input type="checkbox" name="interest" value="ipad"> iPad</label><br>
+            <label><input type="checkbox" name="interest" value="mac"> Mac</label><br>
+
+            <div>
+                <input type="submit" value="Відправити">
+                <input type="reset" value="Очистити">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
