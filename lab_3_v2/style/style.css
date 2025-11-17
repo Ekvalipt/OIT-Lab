@@ -1,0 +1,264 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: white;
+  font-family: DejaVu Sans Mono, monospace;
+}
+
+/* ===== Меню ===== */
+.center-menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background: #111;
+  padding: 15px 0;
+}
+
+.center-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.center-menu a:hover {
+  color: rgb(70, 128, 194);
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.pod_menu {
+  display: none;
+  position: absolute;
+  top: 100%; 
+  left: 0;
+
+  background-color: #111;
+  padding: 10px 0;
+  border-radius: 8px;
+  min-width: 140px;
+  box-shadow: 0 0 10px rgba(70,128,194,0.5);
+  z-index: 999;
+}
+
+.pod_menu a {
+  display: block;
+  padding: 8px 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.pod_menu a:hover {
+  background: rgba(255,255,255,0.1);
+  color: rgb(70,128,194);
+}
+
+.dropdown:hover .pod_menu {
+  display: block;
+}
+
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 50px;
+}
+
+.text_l {
+  max-width: 500px;
+}
+
+.text_l h1 {
+  margin-bottom: 10px;
+}
+
+.text_l k {
+  font-weight: bold;
+  color: rgb(70,128,194);
+}
+
+.image-overlay img {
+  width: 350px;
+  border-radius: 20px;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.image-overlay img:hover {
+  opacity: 1;
+}
+
+.info-columns {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+  gap: 30px;
+}
+
+.info-card {
+  background: #151515;
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.info-card:hover {
+  background: #1d1d1d;
+}
+
+.info-card h2 {
+  color: rgb(70,128,194);
+}
+
+.page-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.page-section h1 {
+  text-align: center;
+  color: rgb(70,128,194);
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.image-grid-item {
+  width: 180px;
+  text-align: center;
+}
+
+.image-grid-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.container {
+  width: 500px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #151515;
+  border-radius: 15px;
+}
+
+.container h1 {
+  text-align: center;
+  color: rgb(70,128,194);
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  background: #222;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background: rgb(70,128,194);
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background: rgb(100,160,220);
+}
+
+.search-box{
+  max-width: 200px;
+  margin-left: 2rem;
+}
+
+ 
+
+.scroll-top {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  background: rgb(70,128,194);
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+}
+
+/* Контейнер зображення */
+.image-grid-item {
+  position: relative;
+  width: 180px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* Картинка */
+.image-grid-item img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  opacity: 0.5;              
+  transition: 0.4s ease;
+}
+
+.image-grid-item span {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  padding: 5px 0;
+
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+
+  opacity: 1;
+  transition: 0.4s ease;
+  text-shadow: 0 0 5px black;
+}
+
+.image-grid-item:hover img {
+  opacity: 1;
+  transform: scale(1.05); 
+}
+
+.image-grid-item:hover span {
+  opacity: 0;             
+}
